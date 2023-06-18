@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="name">Nevgen Anna Georgievna</string>
+    <string name="speciality">Mathematics and Information Technologies</string>
+    <string name="group">04</string>
+    <string name="portrait">Portrait view</string>
+    <string name="landscape">Landscape view</string>
+</resources>
