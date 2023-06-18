@@ -1,60 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     android:padding="10dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="100"
     tools:context=".MainActivity">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="90">
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/textView2"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:autoSizeTextType="uniform"
         android:text="@string/name"
         android:textColor="@color/textColor"
-        android:textSize="36sp" />
+        android:textSize="48sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:gravity="center"
         android:layout_marginTop="50dp"
         android:autoSizeTextType="uniform"
         android:text="@string/speciality"
         android:textColor="@color/textColor"
-        android:textSize="20sp" />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_below="@id/textView2"
         android:layout_marginTop="50dp"
         android:autoSizeTextType="uniform"
         android:text="@string/group"
         android:textColor="@color/textColor"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView4"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:autoSizeTextType="uniform"
-        android:gravity="right"
-        android:text="@string/landscape"
-        android:textColor="@color/gray"
-        android:textSize="14sp"
-        android:textStyle="italic" />
+        android:gravity="right|bottom"
+        android:layout_weight="10">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|bottom"
+            android:text="@string/landscape"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>
